@@ -97,3 +97,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [x] **Phase 05 — Analytics Dashboard:** Dynamic time-series charts (Recharts), date filtering (7D/30D/90D), top performing links, and multi-dimensional breakdowns (referrers, devices, browsers, geography).
 - [x] **Phase 06 — Campaign Management & UTM:** Campaign CRUD, aggregated campaign link metrics, preset parameter tags, real-time URL preview, and seamless one-click UTM-to-shortlink pipeline.
 - [x] **Phase 07 — Security, Testing & Deployment:** Vitest unit/integration test suites (22 tests, 100% pass), HTTP security headers (HSTS, CSP, Frame-Options), and GitHub Actions CI workflow pipeline.
+
+---
+
+## 🤝 Komunitas & Kontribusi
+
+- **[Pedoman Perilaku (Code of Conduct)](./CODE_OF_CONDUCT.md):** Standar perilaku komunitas yang inklusif dan kolaboratif.
+- **[Panduan Kontribusi (Contributing Guide)](./CONTRIBUTING.md):** Petunjuk pengembangan, konvensi kode, pengujian, dan pengiriman Pull Request.
+- **[Kebijakan Keamanan (Security Policy)](./SECURITY.md):** Informasi pelaporan kerentanan keamanan dan tata cara responsible disclosure.
+
+---
+
+## 📄 Lisensi
+
+Proyek ini dilisensikan di bawah persyaratan **[MIT License](./LICENSE)**.  
+Hak Cipta (c) 2026 **Hugo Agfarizky**.
+
