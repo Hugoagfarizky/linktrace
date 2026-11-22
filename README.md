@@ -89,7 +89,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - [x] **Phase 01 — Product Foundation:** Next.js App Router, Tailwind CSS, Prisma ORM schema, modular monolith structure, dark-theme layout, and build pipeline.
 - [x] **Phase 02 — Authentication & Workspace:** User registration/login with bcrypt & JWT session cookies, automated default workspace provisioning, multi-workspace switcher, route protection middleware, and account API routes.
-- [ ] **Phase 03 — Link Management:** Database-backed link CRUD, custom alias validation, and campaign linkage.
+- [x] **Phase 03 — Link Management:** Database-backed link CRUD, collision-resistant custom alias generator, reserved route validation, campaign linkage, inline status toggling, and native modal dialogs.
 - [ ] **Phase 04 — Redirect & Tracking Engine:** Edge-ready HTTP redirects, geo-enrichment, and privacy-preserving visitor hashing.
 - [ ] **Phase 05 — Analytics Dashboard:** Time-series charts, date filters, and aggregated reporting.
 - [ ] **Phase 06 — Campaign Management & UTM:** Campaign analytics rollups and seamless UTM-to-shortlink pipeline.
