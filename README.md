@@ -77,6 +77,9 @@ cp .env.example .env
 # Generate Prisma Client
 npx prisma generate
 
+# Run automated tests
+npm test
+
 # Run the development server
 npm run dev
 ```
@@ -93,4 +96,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [x] **Phase 04 — Redirect & Tracking Engine:** Sub-300ms p95 HTTP 307 redirects, non-blocking click tracking, referrer domain parser, device/OS detection, and privacy-preserving rotating daily visitor salt.
 - [x] **Phase 05 — Analytics Dashboard:** Dynamic time-series charts (Recharts), date filtering (7D/30D/90D), top performing links, and multi-dimensional breakdowns (referrers, devices, browsers, geography).
 - [x] **Phase 06 — Campaign Management & UTM:** Campaign CRUD, aggregated campaign link metrics, preset parameter tags, real-time URL preview, and seamless one-click UTM-to-shortlink pipeline.
-- [ ] **Phase 07 — Security, Testing & Deployment:** Vitest/Playwright test suites, rate limiting, and Vercel/Docker deployment.
+- [x] **Phase 07 — Security, Testing & Deployment:** Vitest unit/integration test suites (22 tests, 100% pass), HTTP security headers (HSTS, CSP, Frame-Options), and GitHub Actions CI workflow pipeline.

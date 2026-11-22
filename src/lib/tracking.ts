@@ -17,7 +17,7 @@ export function parseReferrer(rawReferrer: string | null): string {
     const host = url.hostname.toLowerCase();
 
     if (host.includes("instagram.com")) return "Instagram";
-    if (host.includes("t.co") || host.includes("twitter.com") || host.includes("x.com")) return "Twitter / X";
+    if (host === "t.co" || host.endsWith(".t.co") || host.includes("twitter.com") || host === "x.com" || host.endsWith(".x.com")) return "Twitter / X";
     if (host.includes("youtube.com") || host.includes("youtu.be")) return "YouTube";
     if (host.includes("linkedin.com")) return "LinkedIn";
     if (host.includes("facebook.com") || host.includes("fb.com")) return "Facebook";
@@ -26,7 +26,7 @@ export function parseReferrer(rawReferrer: string | null): string {
     if (host.includes("bing.")) return "Bing Search";
     if (host.includes("reddit.com")) return "Reddit";
     if (host.includes("whatsapp.")) return "WhatsApp";
-    if (host.includes("telegram.") || host.includes("t.me")) return "Telegram";
+    if (host === "t.me" || host.endsWith(".t.me") || host.includes("telegram.")) return "Telegram";
 
     return host.replace(/^www\./, "");
   } catch {
@@ -53,12 +53,12 @@ export function parseUserAgent(ua: string) {
   else if (lower.includes("firefox")) browser = "Firefox";
   else if (lower.includes("opera") || lower.includes("opr/")) browser = "Opera";
 
-  // Operating System
+  // Operating System (check mobile iOS first as iOS UA contains 'like Mac OS X')
   let os = "Other";
-  if (lower.includes("windows")) os = "Windows";
+  if (lower.includes("iphone") || lower.includes("ipad") || lower.includes("ios")) os = "iOS";
   else if (lower.includes("macintosh") || lower.includes("mac os")) os = "macOS";
-  else if (lower.includes("iphone") || lower.includes("ipad") || lower.includes("ios")) os = "iOS";
   else if (lower.includes("android")) os = "Android";
+  else if (lower.includes("windows")) os = "Windows";
   else if (lower.includes("linux")) os = "Linux";
 
   return { deviceType, browser, os };
