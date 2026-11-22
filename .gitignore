@@ -36,3 +36,12 @@ Thumbs.db
 # Prisma & SQLite (if used locally)
 prisma/*.db
 prisma/*.db-journal
+
+/src/generated/prisma
+
+# Agent skills cache
+.agents/
+.claude/
+.windsurf/
+skills-lock.json
+
